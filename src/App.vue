@@ -13,6 +13,26 @@ const questions = ref ([
     selected: null
   },
   {
+    question: "Qui a créé VueJs ?",
+    answer: 0,
+    options: [
+      "Evan You",
+      "Google",
+      "Ryan Dahl"
+    ],
+    selected: null
+  },
+  {
+    question: "À quoi sert l'élément <template> ?",
+    answer: 1,
+    options: [
+      "À rien",
+      "À utiliser des directives de Vue sans créer un élément html",
+      "À insérer un lien de template"
+    ],
+    selected: null
+  },
+  {
     question: "Que permet de faire la commande 'npm run dev' ?",
     answer: 2,
     options: [
@@ -135,7 +155,8 @@ const nextQuestion = () => {
 
         <section v-else>
             <h2>Vous avez fini le quizz !</h2>
-            <p>Votre score est de  {{ score }} / {{ questions.length }}</p>
+            <p v-if="score === questions.length ">Bravo, un sans-faute ! Votre score est de  {{ score }} / {{ questions.length }}</p>
+            <p v-else="score !== questions.length "> Votre score est de  {{ score }} / {{ questions.length }}, continuez !</p>  
         </section>
     </main>
 </template>
