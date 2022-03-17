@@ -74,12 +74,14 @@ const nextQuestion = () => {
 
 <template>
     <main class="app">
-        <h1>The Quizz</h1>
+        <h1>Vue Quizz</h1>
 
         <section class="quiz" v-if="!quizzCompleted">
 
               <div class="quiz-info">
-                  <span class="question">{{ getCurrentQuestion.question }}</span>
+                  <strong>
+                      <span class="question">{{ getCurrentQuestion.question }}</span>
+                  </strong>
                   <span class="score">Score {{ score }} / {{ questions.length }}</span>
               </div>
 
@@ -178,7 +180,7 @@ h1 {
 }
 
 .quiz-info .question {
-    color: #8f8f8f;
+    color: #ffff;
     font-size: 1.25rem;
 }
 
