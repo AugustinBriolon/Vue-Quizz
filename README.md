@@ -16,7 +16,7 @@ And to run localhost
 
 ## Documentation
 
-- [VueLearnDoc](https://vue.doc.august1.dev/)
+[VueLearnDoc](https://vue.doc.august1.dev/)
 
 ## Link
 
