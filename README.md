@@ -18,12 +18,12 @@ And to run localhost
 
 [VueLearnDoc](https://vue.doc.august1.dev/)
 
-## Link
+## VueQuizz
 
-- [VueLearn](https://vue.learn.august1.dev/)
+[VueLearn](https://vue.learn.august1.dev/)
 
 ## Authors
 
-- [@AugustinBriolon](https://github.com/AugustinBriolon)
+[@AugustinBriolon](https://github.com/AugustinBriolon)
 
 
