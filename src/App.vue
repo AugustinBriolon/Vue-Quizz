@@ -113,7 +113,8 @@ const nextQuestion = () => {
 <template>
   <main class="app">
     <h1>Vue Quizz</h1>
-
+    <button id="re">Recommencer ?</button>
+    <br>
     <section class="quiz" v-if="!quizzCompleted">
       <div class="quiz-info">
         <strong>
@@ -176,7 +177,7 @@ const nextQuestion = () => {
         <p v-else="score !== questions.length">
             Votre score est de {{ score }} / {{ questions.length }}, continuez !
         </p>
-        <button @click="reloadPage">Réessayez !</button>
+        
     </section>
   </main>
 </template>
