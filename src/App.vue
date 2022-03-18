@@ -106,15 +106,13 @@ const nextQuestion = () => {
 
   quizzCompleted.value = true;
 };
-
-
 </script>
 
 <template>
   <main class="app">
     <h1>Vue Quizz</h1>
     <button id="re">Recommencer ?</button>
-    <br>
+    <br />
     <section class="quiz" v-if="!quizzCompleted">
       <div class="quiz-info">
         <strong>
@@ -169,15 +167,15 @@ const nextQuestion = () => {
     </section>
 
     <section v-else>
-        <h2>Vous avez fini le quizz !</h2>
-        <p v-if="score === questions.length">
-            Bravo, un sans-faute ! Votre score est de {{ score }} /
-            {{ questions.length }}
-        </p>
-        <p v-else="score !== questions.length">
-            Votre score est de {{ score }} / {{ questions.length }}, continuez !
-        </p>
-        
+      <h2>Vous avez fini le quizz !</h2>
+      <p v-if="score === questions.length">
+        Bravo, un sans-faute ! Votre score est de {{ score }} /
+        {{ questions.length }}
+      </p>
+      <p v-else="score !== questions.length">
+        Votre score est de {{ score }} / {{ questions.length }}, continuez !
+      </p>
+      <p>Vous voulez progresser ? RDV sur la <a href="https://vue.doc.august1.dev/" target="_blank">Doc</a></p>
     </section>
   </main>
 </template>
@@ -297,5 +295,10 @@ p {
   color: #8f8f8f;
   font-size: 1.5rem;
   text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #2cce7d;
 }
 </style>
