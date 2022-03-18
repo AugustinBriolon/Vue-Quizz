@@ -16,7 +16,7 @@ And to run localhost
 
 ## Documentation
 
-- [VueLearnDoc](https://vuelearn-doc-bxf9j2e58-augustinbriolon.vercel.app/)
+- [VueLearnDoc](https://vue.doc.august1.dev/)
 
 ## Link
 
