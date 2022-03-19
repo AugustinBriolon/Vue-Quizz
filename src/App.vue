@@ -111,6 +111,8 @@ const nextQuestion = () => {
 <template>
   <main class="app">
     <h1>Vue Quizz</h1>
+    <p>Apprenez Vue JS sur la <a href="https://vue.doc.august1.dev/" target="_blank">Doc</a></p>
+    <br>
     <button id="re">Recommencer ?</button>
     <br />
     <section class="quiz" v-if="!quizzCompleted">
@@ -173,9 +175,8 @@ const nextQuestion = () => {
         {{ questions.length }}
       </p>
       <p v-else="score !== questions.length">
-        Votre score est de {{ score }} / {{ questions.length }}, continuez !
+        Votre score est de {{ score }} / {{ questions.length }}
       </p>
-      <p>Vous voulez progresser ? RDV sur la <a href="https://vue.doc.august1.dev/" target="_blank">Doc</a></p>
     </section>
   </main>
 </template>
