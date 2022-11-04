@@ -111,6 +111,7 @@ const nextQuestion = () => {
 <template>
   <main class="app">
     <h1>Vue Quizz</h1>
+    <a href="https://august1.dev/" target="_blank">Made by Augustin Briolon</a>
     <p>Apprenez Vue JS sur la <a href="https://vue.doc.august1.dev/" target="_blank">Doc</a></p>
     <br>
     <button id="re">Recommencer ?</button>
